@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import Kingfisher
 
-class MyPageVC: UIViewController {
+class MyPageVC: UITableViewController {
 
     @IBOutlet weak var myPageTableView: UITableView!
     var ProjectList: [ProjectList] = []
@@ -20,10 +20,7 @@ class MyPageVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-}
-extension MyPageVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return self.ProjectList.count
         } else {
@@ -31,15 +28,11 @@ extension MyPageVC: UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTVC",
                                                  for: indexPath) as! MainTVC
         
         return cell
     }
-    
-    
-}
-extension MyPageVC: UITableViewDelegate {
-    
+
 }
