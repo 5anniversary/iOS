@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE7248BF21400C826D7 /* WorkingCell.swift */; };
 		5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */; };
 		5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */; };
 		5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD9248BC0CC00576E34 /* MainVC.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		215A6299116B001832FF49AD /* Pods_Bangmoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangmoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB41EE7248BF21400C826D7 /* WorkingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingCell.swift; sourceTree = "<group>"; };
 		5E5D8DD2248BC0CC00576E34 /* Bangmoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bangmoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				5E5D8E07248BCA5B00576E34 /* MyPageVC.swift */,
+				3DB41EE7248BF21400C826D7 /* WorkingCell.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				5E5D8E0E248BD31A00576E34 /* UIView+Extension.swift in Sources */,
 				5E5D8E12248BD34100576E34 /* UITabelView+Extension.swift in Sources */,
 				5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */,
+				3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */,
 				5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */,
 				5E5D8DFA248BC51F00576E34 /* UIImageView+Extension.swift in Sources */,
 				5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */,
@@ -500,6 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78A867AHKF;
 				INFOPLIST_FILE = "Bangmoon/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,6 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78A867AHKF;
 				INFOPLIST_FILE = "Bangmoon/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
