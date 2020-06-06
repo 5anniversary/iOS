@@ -14,13 +14,17 @@
 		5E5D8DDF248BC0D100576E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8DDE248BC0D100576E34 /* Assets.xcassets */; };
 		5E5D8DE2248BC0D100576E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8DE0248BC0D100576E34 /* LaunchScreen.storyboard */; };
 		5E5D8DF4248BC4F700576E34 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF3248BC4F700576E34 /* Model.swift */; };
-		5E5D8DF6248BC50600576E34 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF5248BC50600576E34 /* Enum.swift */; };
-		5E5D8DF8248BC51300576E34 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF7248BC51300576E34 /* Service.swift */; };
-		5E5D8DFA248BC51F00576E34 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF9248BC51F00576E34 /* Extension.swift */; };
+		5E5D8DF6248BC50600576E34 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF5248BC50600576E34 /* Font.swift */; };
+		5E5D8DF8248BC51300576E34 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF7248BC51300576E34 /* NetworkResult.swift */; };
+		5E5D8DFA248BC51F00576E34 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF9248BC51F00576E34 /* UIImageView+Extension.swift */; };
 		5E5D8DFE248BCA0000576E34 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8DFD248BCA0000576E34 /* Detail.storyboard */; };
 		5E5D8E00248BCA0F00576E34 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8DFF248BCA0F00576E34 /* MyPage.storyboard */; };
 		5E5D8E06248BCA4B00576E34 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E05248BCA4B00576E34 /* DetailVC.swift */; };
 		5E5D8E08248BCA5B00576E34 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E07248BCA5B00576E34 /* MyPageVC.swift */; };
+		5E5D8E0C248BCF8600576E34 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E0B248BCF8600576E34 /* APIConstants.swift */; };
+		5E5D8E0E248BD31A00576E34 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E0D248BD31A00576E34 /* UIView+Extension.swift */; };
+		5E5D8E10248BD32E00576E34 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E0F248BD32E00576E34 /* Date+Extension.swift */; };
+		5E5D8E12248BD34100576E34 /* UITabelView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E11248BD34100576E34 /* UITabelView+Extension.swift */; };
 		D7EE07A06EA2F6EAB543242B /* Pods_Bangmoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215A6299116B001832FF49AD /* Pods_Bangmoon.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,13 +39,17 @@
 		5E5D8DE1248BC0D100576E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E5D8DE3248BC0D100576E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E5D8DF3248BC4F700576E34 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		5E5D8DF5248BC50600576E34 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
-		5E5D8DF7248BC51300576E34 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		5E5D8DF9248BC51F00576E34 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5E5D8DF5248BC50600576E34 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		5E5D8DF7248BC51300576E34 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		5E5D8DF9248BC51F00576E34 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		5E5D8DFD248BCA0000576E34 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		5E5D8DFF248BCA0F00576E34 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		5E5D8E05248BCA4B00576E34 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		5E5D8E07248BCA5B00576E34 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		5E5D8E0B248BCF8600576E34 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		5E5D8E0D248BD31A00576E34 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5E5D8E0F248BD32E00576E34 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		5E5D8E11248BD34100576E34 /* UITabelView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabelView+Extension.swift"; sourceTree = "<group>"; };
 		821946333EC178FF8B461AFD /* Pods-Bangmoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.debug.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.debug.xcconfig"; sourceTree = "<group>"; };
 		CC650A4003572A0164E29605 /* Pods-Bangmoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.release.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +164,7 @@
 		5E5D8DEE248BC3BA00576E34 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				5E5D8DF5248BC50600576E34 /* Enum.swift */,
+				5E5D8DF5248BC50600576E34 /* Font.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -164,7 +172,8 @@
 		5E5D8DEF248BC3CB00576E34 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				5E5D8DF7248BC51300576E34 /* Service.swift */,
+				5E5D8DF7248BC51300576E34 /* NetworkResult.swift */,
+				5E5D8E0B248BCF8600576E34 /* APIConstants.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -172,7 +181,10 @@
 		5E5D8DF0248BC3D400576E34 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5E5D8DF9248BC51F00576E34 /* Extension.swift */,
+				5E5D8DF9248BC51F00576E34 /* UIImageView+Extension.swift */,
+				5E5D8E0D248BD31A00576E34 /* UIView+Extension.swift */,
+				5E5D8E0F248BD32E00576E34 /* Date+Extension.swift */,
+				5E5D8E11248BD34100576E34 /* UITabelView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -328,15 +340,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5D8E0E248BD31A00576E34 /* UIView+Extension.swift in Sources */,
+				5E5D8E12248BD34100576E34 /* UITabelView+Extension.swift in Sources */,
 				5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */,
 				5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */,
-				5E5D8DFA248BC51F00576E34 /* Extension.swift in Sources */,
+				5E5D8DFA248BC51F00576E34 /* UIImageView+Extension.swift in Sources */,
 				5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */,
+				5E5D8E10248BD32E00576E34 /* Date+Extension.swift in Sources */,
 				5E5D8E08248BCA5B00576E34 /* MyPageVC.swift in Sources */,
-				5E5D8DF6248BC50600576E34 /* Enum.swift in Sources */,
+				5E5D8DF6248BC50600576E34 /* Font.swift in Sources */,
+				5E5D8E0C248BCF8600576E34 /* APIConstants.swift in Sources */,
 				5E5D8E06248BCA4B00576E34 /* DetailVC.swift in Sources */,
 				5E5D8DF4248BC4F700576E34 /* Model.swift in Sources */,
-				5E5D8DF8248BC51300576E34 /* Service.swift in Sources */,
+				5E5D8DF8248BC51300576E34 /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

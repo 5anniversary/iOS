@@ -1,5 +1,5 @@
 //
-//  Extension.swift
+//  APIConstants.swift
 //  Bangmoon
 //
 //  Created by Junhyeon on 2020/06/06.
@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct APIConstants {
+
+    static let BaseURL = ""
+
+}
