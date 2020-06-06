@@ -29,17 +29,18 @@
 > * Kingfisher
 > * SnapKit
 
-## iOS 뷰
-<img src=https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view1.png >
-<img src=https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view2.png >
-<img src=https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view3.png >
-
 사용한 Extension
 ------------
 > * UIColor : 각종 색 주입, hex로 조절
 > * UIImageView : Kingfisher 사용
 > * UIView : superview에 맞는 autolayout , rounding, border
 > * UIViewcontroller : alertcontroller 
+
+## iOS 뷰
+<img src=https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view1.png >
+<img src=https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view2.png >
+<img src=https://github.com/Soptkathon-26th-bangmoon/BangMoon-Server/blob/master/README_RES/view3.png >
+
 
 
 ## 핵심가치
