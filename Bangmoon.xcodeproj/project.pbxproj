@@ -25,6 +25,12 @@
 		5E5D8E0E248BD31A00576E34 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E0D248BD31A00576E34 /* UIView+Extension.swift */; };
 		5E5D8E10248BD32E00576E34 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E0F248BD32E00576E34 /* Date+Extension.swift */; };
 		5E5D8E12248BD34100576E34 /* UITabelView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E11248BD34100576E34 /* UITabelView+Extension.swift */; };
+		5E5D8E16248BEABE00576E34 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E14248BEABE00576E34 /* MainTVC.swift */; };
+		5E5D8E17248BEABE00576E34 /* MainTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8E15248BEABE00576E34 /* MainTVC.xib */; };
+		5E5D8E1B248BEB5500576E34 /* MainTVHV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E1A248BEB5500576E34 /* MainTVHV.swift */; };
+		5E5D8E1D248BEB6300576E34 /* MainTVHV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8E1C248BEB6300576E34 /* MainTVHV.xib */; };
+		5E5D8E22248BF19700576E34 /* MainCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E20248BF19700576E34 /* MainCVC.swift */; };
+		5E5D8E23248BF19700576E34 /* MainCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8E21248BF19700576E34 /* MainCVC.xib */; };
 		D7EE07A06EA2F6EAB543242B /* Pods_Bangmoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215A6299116B001832FF49AD /* Pods_Bangmoon.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +56,12 @@
 		5E5D8E0D248BD31A00576E34 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		5E5D8E0F248BD32E00576E34 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		5E5D8E11248BD34100576E34 /* UITabelView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabelView+Extension.swift"; sourceTree = "<group>"; };
+		5E5D8E14248BEABE00576E34 /* MainTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
+		5E5D8E15248BEABE00576E34 /* MainTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTVC.xib; sourceTree = "<group>"; };
+		5E5D8E1A248BEB5500576E34 /* MainTVHV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVHV.swift; sourceTree = "<group>"; };
+		5E5D8E1C248BEB6300576E34 /* MainTVHV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTVHV.xib; sourceTree = "<group>"; };
+		5E5D8E20248BF19700576E34 /* MainCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCVC.swift; sourceTree = "<group>"; };
+		5E5D8E21248BF19700576E34 /* MainCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCVC.xib; sourceTree = "<group>"; };
 		821946333EC178FF8B461AFD /* Pods-Bangmoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.debug.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.debug.xcconfig"; sourceTree = "<group>"; };
 		CC650A4003572A0164E29605 /* Pods-Bangmoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.release.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,9 +230,23 @@
 		5E5D8E04248BCA2000576E34 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5E5D8E13248BEAA400576E34 /* Cell */,
 				5E5D8DD9248BC0CC00576E34 /* MainVC.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		5E5D8E13248BEAA400576E34 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D8E14248BEABE00576E34 /* MainTVC.swift */,
+				5E5D8E15248BEABE00576E34 /* MainTVC.xib */,
+				5E5D8E1A248BEB5500576E34 /* MainTVHV.swift */,
+				5E5D8E1C248BEB6300576E34 /* MainTVHV.xib */,
+				5E5D8E20248BF19700576E34 /* MainCVC.swift */,
+				5E5D8E21248BF19700576E34 /* MainCVC.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +313,9 @@
 				5E5D8E00248BCA0F00576E34 /* MyPage.storyboard in Resources */,
 				5E5D8DDF248BC0D100576E34 /* Assets.xcassets in Resources */,
 				5E5D8DDD248BC0CC00576E34 /* Main.storyboard in Resources */,
+				5E5D8E17248BEABE00576E34 /* MainTVC.xib in Resources */,
+				5E5D8E23248BF19700576E34 /* MainCVC.xib in Resources */,
+				5E5D8E1D248BEB6300576E34 /* MainTVHV.xib in Resources */,
 				5E5D8DFE248BCA0000576E34 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,13 +372,16 @@
 				5E5D8E0E248BD31A00576E34 /* UIView+Extension.swift in Sources */,
 				5E5D8E12248BD34100576E34 /* UITabelView+Extension.swift in Sources */,
 				5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */,
+				5E5D8E1B248BEB5500576E34 /* MainTVHV.swift in Sources */,
 				5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */,
 				5E5D8DFA248BC51F00576E34 /* UIImageView+Extension.swift in Sources */,
 				5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */,
 				5E5D8E10248BD32E00576E34 /* Date+Extension.swift in Sources */,
 				5E5D8E08248BCA5B00576E34 /* MyPageVC.swift in Sources */,
+				5E5D8E22248BF19700576E34 /* MainCVC.swift in Sources */,
 				5E5D8DF6248BC50600576E34 /* Font.swift in Sources */,
 				5E5D8E0C248BCF8600576E34 /* APIConstants.swift in Sources */,
+				5E5D8E16248BEABE00576E34 /* MainTVC.swift in Sources */,
 				5E5D8E06248BCA4B00576E34 /* DetailVC.swift in Sources */,
 				5E5D8DF4248BC4F700576E34 /* Model.swift in Sources */,
 				5E5D8DF8248BC51300576E34 /* NetworkResult.swift in Sources */,
