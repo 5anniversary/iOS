@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class DetailVC: UIViewController {
 
     
@@ -59,3 +60,17 @@ class DetailVC: UIViewController {
     
 
 }
+
+
+extension UIView{
+    @IBInspectable
+    var conerradious: CGFloat{
+        get{
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
+}
+

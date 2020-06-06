@@ -24,7 +24,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvm-m0-txo">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2122.3333333333335"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="29729Cb19F94F111Df8E1B397A428204" translatesAutoresizingMaskIntoConstraints="NO" id="crk-Vu-z5u">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailviewImgMain" translatesAutoresizingMaskIntoConstraints="NO" id="crk-Vu-z5u">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="277"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="277" id="AOe-JC-zJn"/>
@@ -302,7 +302,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="29729Cb19F94F111Df8E1B397A428204" width="393" height="295"/>
         <image name="detailviewImgCharacter" width="375" height="912"/>
+        <image name="detailviewImgMain" width="375" height="277"/>
     </resources>
 </document>
