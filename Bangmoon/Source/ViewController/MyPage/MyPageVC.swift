@@ -13,7 +13,7 @@ import Kingfisher
 class MyPageVC: UIViewController {
 
     @IBOutlet weak var myPageTableView: UITableView!
-    
+    var ProjectList: [ProjectList] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,4 +21,22 @@ class MyPageVC: UIViewController {
     }
     
 
+}
+extension MyPageVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView == WorkingCell {
+            return self.ProjectList.count
+        } else {
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+}
+extension MyPageVC: UITableViewDelegate {
+    
 }

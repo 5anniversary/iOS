@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE7248BF21400C826D7 /* WorkingCell.swift */; };
 		3DB41EEA248C03B100C826D7 /* EndCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE9248C03B100C826D7 /* EndCell.swift */; };
+		3DB41EEC248C082C00C826D7 /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EEB248C082C00C826D7 /* ProjectList.swift */; };
 		5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */; };
 		5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */; };
 		5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD9248BC0CC00576E34 /* MainVC.swift */; };
@@ -34,6 +35,7 @@
 		215A6299116B001832FF49AD /* Pods_Bangmoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangmoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB41EE7248BF21400C826D7 /* WorkingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingCell.swift; sourceTree = "<group>"; };
 		3DB41EE9248C03B100C826D7 /* EndCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndCell.swift; sourceTree = "<group>"; };
+		3DB41EEB248C082C00C826D7 /* ProjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectList.swift; sourceTree = "<group>"; };
 		5E5D8DD2248BC0CC00576E34 /* Bangmoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bangmoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				5E5D8E07248BCA5B00576E34 /* MyPageVC.swift */,
 				3DB41EE7248BF21400C826D7 /* WorkingCell.swift */,
 				3DB41EE9248C03B100C826D7 /* EndCell.swift */,
+				3DB41EEB248C082C00C826D7 /* ProjectList.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				5E5D8E06248BCA4B00576E34 /* DetailVC.swift in Sources */,
 				5E5D8DF4248BC4F700576E34 /* Model.swift in Sources */,
 				5E5D8DF8248BC51300576E34 /* NetworkResult.swift in Sources */,
+				3DB41EEC248C082C00C826D7 /* ProjectList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

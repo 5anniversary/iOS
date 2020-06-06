@@ -9,6 +9,7 @@
 import UIKit
 
 class EndCell: UITableViewCell {
+    static let identifier: String = "EndCell"
 
     @IBOutlet weak var videoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

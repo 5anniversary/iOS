@@ -9,7 +9,8 @@
 import UIKit
 
 class WorkingCell: UITableViewCell {
-
+    static let identifier: String = "WorkingCell"
+    
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
