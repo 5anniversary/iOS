@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Alamofire
+import Kingfisher
 
 class MyPageVC: UIViewController {
 
+    @IBOutlet weak var myPageTableView: UITableView!
+    var ProjectList: [ProjectList] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +21,22 @@ class MyPageVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+extension MyPageVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return self.ProjectList.count
+        } else {
+            return 0
+        }
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+}
+extension MyPageVC: UITableViewDelegate {
+    
 }
