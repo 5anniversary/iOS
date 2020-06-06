@@ -35,7 +35,7 @@ extension UIImageView {
         if urlString == "" || urlString == nil {
             setImage(with: APIConstants.BaseURL + "/")
         } else {
-            setImage(with: APIConstants.BaseURL + "/"  + (urlString ?? ""))
+            setImage(with: (urlString ?? ""))
         }
     }
     

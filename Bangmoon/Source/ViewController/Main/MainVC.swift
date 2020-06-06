@@ -14,12 +14,18 @@ class MainVC: UIViewController {
     
     let headerView = UIView()
     
-    let projectButton = UIButton()
-    let detailButton = UIButton()
+    let categoryLabel = UILabel()
+    let categoryUnderBar = UIView()
+    let musicalLabel = UILabel()
+    let theaterLabel = UILabel()
+    let classicLabel = UILabel()
+    let etcLabel = UILabel()
+    var model: MainModel?
+    
     
         
     let scrollView = UIScrollView()
-    var images = ["select_img_iron_man", "select_img_captain_america",  "select_img_spider_man", "select_img_black_panther"]
+    var images = ["mainviewImgMain", "mainviewImgMain2",  "mainviewImgMain3"]
 
     lazy var rightBarButton : UIBarButtonItem = {
         let button = UIBarButtonItem(image: UIImage(named: "13"),
@@ -28,6 +34,7 @@ class MainVC: UIViewController {
                                      action: #selector(toSearch))
         return button
     }()
+    
     lazy var leftBarButton : UIBarButtonItem = {
         let button = UIBarButtonItem(image: UIImage(named: "12"),
                                      style: .plain,
@@ -42,10 +49,14 @@ class MainVC: UIViewController {
         setTabelView()
         self.navigationItem.rightBarButtonItem = self.rightBarButton
         self.navigationItem.leftBarButtonItem = self.leftBarButton
-
+        self.navigationController?.navigationBar.backgroundColor = .white
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        get()
     }
 
-    
+     
     func setTabelView(){
         mainTV.delegate = self
         mainTV.dataSource = self
@@ -68,48 +79,70 @@ class MainVC: UIViewController {
     }
     
     
-    
 }
 
 extension MainVC: UITableViewDelegate{ }
 extension MainVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 332
+        return 316.5
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        172
+        147
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 12
+        return model?.data.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTVC",
                                                  for: indexPath) as! MainTVC
-        let age = "2000"
         
-        cell.ageLabel.text = age.insertComma
+        cell.mainIMG.setImageBangMoon((model?.data[indexPath.row].pPosterImg ?? "") as String)
+        cell.titleLabel.text = model?.data[indexPath.row].pName
+        cell.categoryLabel.text = model?.data[indexPath.row].pGenre
+        cell.dateLabel.text = String(describing: model?.data[indexPath.row].pDate) + "일 남음"
+        let money = String(describing: model?.data[indexPath.row].pTotalMoney)
+        let rate = String(describing: model?.data[indexPath.row].pPercentage)
+        cell.ageLabel.text = model?.data[indexPath.row].pRate
+        
+        print(rate)
+        cell.timeLabel.text = ((String(describing: model?.data[indexPath.row].pTimes)) as String)
+        cell.rateLabel.text = money + " " + rate + " %"
+        var progress: Float = Float(model?.data[indexPath.row].pPercentage ?? 0)
+        
+        if progress >= 100 {
+            progress = 1
+        } else {
+            progress = (progress)/100
+        }
+        
+        cell.progress.progress = progress
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         self.headerView.addSubview(scrollView)
-        self.headerView.addSubview(projectButton)
-        self.headerView.addSubview(detailButton)
+        self.headerView.addSubview(categoryLabel)
+        self.headerView.addSubview(etcLabel)
+        self.headerView.addSubview(classicLabel)
+        self.headerView.addSubview(theaterLabel)
+        self.headerView.addSubview(musicalLabel)
+        self.headerView.addSubview(categoryUnderBar)
 
         scrollView.snp.makeConstraints { (make) in
             make.top.equalTo(headerView)
             make.leading.equalTo(headerView)
             make.trailing.equalTo(headerView)
-            make.bottom.equalTo(headerView).offset(-80)
+            make.bottom.equalTo(headerView).offset(-64.5)
         }
         
         scrollView.delegate = self
         scrollView.isPagingEnabled = true
+        
         
         for i in 0..<images.count {
             let imageView = UIImageView()
@@ -132,18 +165,68 @@ extension MainVC: UITableViewDataSource {
             scrollView.addSubview(imageView)
             scrollView.addSubview(nameLabel)
         }
+        
+        categoryLabel.text = "전체"
+        categoryLabel.font = Font.catgoryLabel
+        categoryLabel.textAlignment = .center
+        categoryLabel.textColor = UIColor.purpleColor
+      
+        musicalLabel.text = "뮤지컬"
+        musicalLabel.font = Font.catgoryLabel
+        musicalLabel.textAlignment = .center
+       
+        theaterLabel.text = "연극"
+        theaterLabel.font = Font.catgoryLabel
+        theaterLabel.textAlignment = .center
 
-        projectButton.snp.makeConstraints { (make) in
-            make.leading.equalTo(headerView).offset(16)
-            make.top.equalTo(scrollView.snp.bottom).offset(24)
+        classicLabel.text = "클래식"
+        classicLabel.font = Font.catgoryLabel
+        classicLabel.textAlignment = .center
+
+        etcLabel.text = "기타"
+        etcLabel.font = Font.catgoryLabel
+        etcLabel.textAlignment = .center
+
+        categoryUnderBar.backgroundColor = UIColor.purpleColor
+        
+        categoryLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(scrollView.snp.bottom).offset(26)
+            make.width.equalTo(self.view.frame.width/5)
+            make.leading.equalTo(headerView)
         }
-        detailButton.snp.makeConstraints { (make) in
-            make.trailing.equalTo(headerView).offset(-13)
-            make.top.equalTo(scrollView.snp.bottom).offset(30)
+        
+        musicalLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(scrollView.snp.bottom).offset(26)
+            make.width.equalTo(self.view.frame.width/5)
+            make.leading.equalTo(headerView).offset(self.view.frame.width/5)
         }
 
-        projectButton.setImage(UIImage(named: "invalidName"), for: .normal)
-        detailButton.setImage(UIImage(named: "43"), for: .normal)
+        theaterLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(scrollView.snp.bottom).offset(26)
+            make.width.equalTo(self.view.frame.width/5)
+            make.leading.equalTo(headerView).offset(self.view.frame.width / 5 * 2)
+        }
+
+        classicLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(scrollView.snp.bottom).offset(26)
+            make.width.equalTo(self.view.frame.width/5)
+            make.leading.equalTo(headerView).offset(self.view.frame.width / 5 * 3)
+        }
+
+        etcLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(scrollView.snp.bottom).offset(26)
+            make.width.equalTo(self.view.frame.width/5)
+            make.leading.equalTo(headerView).offset(self.view.frame.width / 5 * 4)
+        }
+        
+        categoryUnderBar.snp.makeConstraints { (make) in
+            make.top.equalTo(scrollView.snp.bottom).offset(61)
+            make.height.equalTo(4)
+            make.width.equalTo(self.view.frame.width/5)
+            make.leading.equalTo(headerView)
+        }
+
+
     
         return headerView
     }
@@ -159,3 +242,36 @@ extension MainVC: UITableViewDataSource {
 }
 
 
+extension MainVC {
+    func get(){
+        MainService.shared.getMainService(){
+            [weak self]
+            data in
+            
+            guard let `self` = self else { return }
+            
+            switch data {
+                
+            // 매개변수에 어떤 값을 가져올 것인지
+            case .success(let res):
+                let response = res as! MainModel
+                self.model = response
+                
+                self.mainTV.reloadData()
+                
+            case .requestErr(let message):
+                self.simpleAlert(title: "리스트 조회 실패", message: "\(message)")
+                
+            case .pathErr:
+                print(".pathErr")
+                
+            case .serverErr:
+                print(".serverErr")
+                
+            case .networkFail:
+                self.simpleAlert(title: "리스트 조회 실패", message: "네트워크 상태를 확인해주세요.")
+            }
+            
+        }
+    }
+}
