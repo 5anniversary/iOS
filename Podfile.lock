@@ -13,7 +13,7 @@ DEPENDENCIES:
   - Then
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Kingfisher
     - SnapKit
@@ -27,8 +27,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: d34bad23a4861a394e5705c6a76a54b15bec12c1
 
-<<<<<<< HEAD
-COCOAPODS: 1.8.4
-=======
-COCOAPODS: 1.9.1
->>>>>>> develop
+COCOAPODS: 1.7.3
