@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				821946333EC178FF8B461AFD /* Pods-Bangmoon.debug.xcconfig */,
 				CC650A4003572A0164E29605 /* Pods-Bangmoon.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,87 @@
 		5E5D8DD4248BC0CC00576E34 /* Bangmoon */ = {
 			isa = PBXGroup;
 			children = (
-				5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */,
-				5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */,
-				5E5D8DD9248BC0CC00576E34 /* ViewController.swift */,
-				5E5D8DDB248BC0CC00576E34 /* Main.storyboard */,
-				5E5D8DDE248BC0D100576E34 /* Assets.xcassets */,
-				5E5D8DE0248BC0D100576E34 /* LaunchScreen.storyboard */,
-				5E5D8DE3248BC0D100576E34 /* Info.plist */,
+				5E5D8DEB248BC39500576E34 /* Source */,
+				5E5D8DEA248BC39100576E34 /* Resource */,
+				5E5D8DE9248BC38700576E34 /* Supporting Files */,
 			);
 			path = Bangmoon;
+			sourceTree = "<group>";
+		};
+		5E5D8DE9248BC38700576E34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D8DE3248BC0D100576E34 /* Info.plist */,
+				5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */,
+				5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E5D8DEA248BC39100576E34 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D8DDE248BC0D100576E34 /* Assets.xcassets */,
+				5E5D8DE0248BC0D100576E34 /* LaunchScreen.storyboard */,
+				5E5D8DF1248BC3DC00576E34 /* StoryBoards */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5E5D8DEB248BC39500576E34 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D8DF0248BC3D400576E34 /* Extension */,
+				5E5D8DEF248BC3CB00576E34 /* Service */,
+				5E5D8DEE248BC3BA00576E34 /* Enum */,
+				5E5D8DED248BC3B500576E34 /* Model */,
+				5E5D8DEC248BC3AF00576E34 /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5E5D8DEC248BC3AF00576E34 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D8DD9248BC0CC00576E34 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5E5D8DED248BC3B500576E34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E5D8DEE248BC3BA00576E34 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		5E5D8DEF248BC3CB00576E34 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5E5D8DF0248BC3D400576E34 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5E5D8DF1248BC3DC00576E34 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D8DDB248BC0CC00576E34 /* Main.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
