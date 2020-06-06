@@ -24,7 +24,7 @@ class MyPageVC: UIViewController {
 }
 extension MyPageVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tableView == WorkingCell {
+        if section == 0 {
             return self.ProjectList.count
         } else {
             return 0

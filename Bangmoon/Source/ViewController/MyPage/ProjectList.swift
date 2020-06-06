@@ -18,3 +18,22 @@ struct ProjectList: Codable {
     var p_times: Int
     var p_percentage: Int
 }
+
+struct Welcome: Codable {
+    let status: Int
+    let message: String
+    let data: [CompleteList]
+}
+
+struct CompleteList: Codable {
+    let pCompletedImg, pName, pGenre: String
+    let pRate, pTimes: Int
+
+    enum CodingKeys: String, CodingKey {
+        case pCompletedImg = "p_completed_img"
+        case pName = "p_name"
+        case pGenre = "p_genre"
+        case pRate = "p_rate"
+        case pTimes = "p_times"
+    }
+}
