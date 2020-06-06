@@ -51,6 +51,11 @@
                                                                     <constraint firstAttribute="height" constant="27" id="msP-VG-yFD"/>
                                                                     <constraint firstItem="VxA-Ia-c1X" firstAttribute="centerX" secondItem="8v2-pV-He0" secondAttribute="centerX" id="veH-v7-F4H"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="conerradious">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDD-wv-APh">
                                                                 <rect key="frame" x="15" y="50" width="30" height="21"/>
