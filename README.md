@@ -71,7 +71,59 @@
 2.  BM Gray: 
     서브 컬러. 심플함. 세련됨과 효율성을 상징
 
+## HTTP 서버 통신 구조체 생성
+```swift
+struct Complete: Codable {
+    let status: String
+    let message: String
+    let data: [ProjectList]
+}
 
+
+struct ProjectList: Codable {
+    let pIdx: Int
+    let pPosterImg,pName, pGenre: String
+    let pDate, pTotalMoney, pRate, pTimes: Int
+    let pPercentage: Int
+
+    enum CodingKeys: String, CodingKey {
+        case pIdx = "p_idx"
+        case pPosterImg = "p_poster_img"
+        case pName = "p_name"
+        case pGenre = "p_genre"
+        case pDate = "p_date"
+        case pTotalMoney = "p_total_money"
+        case pRate = "p_rate"
+        case pTimes = "p_times"
+        case pPercentage = "p_percentage "
+    }
+}
+```
+## HTTP 서버 통신 구현
+```swift
+static let shared = MyPageService()
+    func getMyPageProjectService(completion: @escaping (NetworkResult<Any>)->Void) {
+        let URL = APIConstants.myPageprojectURL
+        let headers: HTTPHeaders = ["Content-Type": "application/json"]
+        Alamofire.request(URL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseData { response in
+            switch response.result {
+                
+            case .success:
+                if let value = response.result.value {
+                    if let status = response.response?.statusCode {
+                        switch status {
+                        case 200:
+                            do {
+                                let decoder = JSONDecoder()
+                                let result = try decoder.decode(Complete.self, from: value)
+                                
+                                completion(.success(result))
+                            } catch {
+                                completion(.pathErr)
+                            }
+                        default:break
+
+```
 
 **Contributor**
 
