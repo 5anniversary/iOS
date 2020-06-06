@@ -12,7 +12,7 @@ class MainCVC: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
     }
 
 }

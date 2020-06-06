@@ -9,6 +9,6 @@
 import UIKit
 
 enum Font {
-    static let nameLabel = UIFont.boldSystemFont(ofSize: 15)
-    static let dateLabel = UIFont.systemFont(ofSize: 10)
+    static let titleLabel = UIFont.boldSystemFont(ofSize: 17)
+    static let detailLabel = UIFont.systemFont(ofSize: 10)
 }
