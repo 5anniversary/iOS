@@ -35,14 +35,5 @@ import Foundation
             case pStory = "p_story"
             case pGroupImg = "p_group_img"
         }
-        
-        init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-            status = (try? values.decode(Int.self, forKey: .status)) ?? -1
-            success = (try? values.decode(Bool.self, forKey: .success)) ?? false
-            message = (try? values.decode(String.self, forKey: .message)) ?? ""
-            data = (try? values.decode(TokenData.self, forKey: .data)) ?? nil
-        }
-        
     }
 }
