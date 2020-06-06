@@ -17,20 +17,20 @@ class MainTVC: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
+    @IBOutlet weak var progress: UIProgressView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        mainIMG.backgroundColor = .red
-        
+        mainIMG.contentMode = .scaleAspectFill
         titleLabel.font = Font.titleLabel
         categoryLabel.font = Font.detailLabel
         ageLabel.font = Font.detailLabel
         timeLabel.font = Font.detailLabel
         dateLabel.font = Font.detailLabel
         rateLabel.font = Font.detailLabel
-
+        progress.progressTintColor = UIColor.purpleColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

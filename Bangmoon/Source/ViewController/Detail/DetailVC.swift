@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 class DetailVC: UIViewController {
-
+    
     
     @IBOutlet weak var pPosterImg: UIImageView! // 포스터 이미지
     @IBOutlet weak var pGenrelbl: UILabel!         // 유형
@@ -27,14 +27,13 @@ class DetailVC: UIViewController {
     
     @IBOutlet weak var sponbtn: UIButton!       // 후원하기 버튼
     
-    
+    var index = 0
     // override
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+        
+        get(index)
     }
-    
     
     
     
@@ -47,18 +46,18 @@ class DetailVC: UIViewController {
         
         
         let yes = UIAlertAction(title: "네", style: .default, handler: nil)
-
+        
         let no = UIAlertAction(title: "아니요", style: .default, handler: nil)
         
         alert.addAction(yes)
         alert.addAction(no)
-    
+        
         present(alert, animated: false, completion: nil)
-
-    
+        
+        
     }
     
-
+    
 }
 
 
@@ -74,3 +73,34 @@ extension UIView{
     }
 }
 
+extension DetailVC {
+    func get(_ index: Int){
+        DetailService.shared.getDetailService(index){
+            [weak self]
+            data in
+            
+            guard let `self` = self else { return }
+            
+            switch data {
+                
+            // 매개변수에 어떤 값을 가져올 것인지
+            case .success(let res):
+                let response = res as! Detail
+                self.pGenrelbl.text = response.data[0].pGenre
+                
+            case .requestErr(let message):
+                self.simpleAlert(title: "공지사항 조회 실패", message: "\(message)")
+                
+            case .pathErr:
+                print(".pathErr")
+                
+            case .serverErr:
+                print(".serverErr")
+                
+            case .networkFail:
+                self.simpleAlert(title: "카테고리 조회 실패", message: "네트워크 상태를 확인해주세요.")
+            }
+            
+        }
+    }
+}

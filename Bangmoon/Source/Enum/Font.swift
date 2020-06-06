@@ -11,4 +11,5 @@ import UIKit
 enum Font {
     static let titleLabel = UIFont.boldSystemFont(ofSize: 17)
     static let detailLabel = UIFont.systemFont(ofSize: 10)
+    static let catgoryLabel = UIFont.systemFont(ofSize: 15)
 }

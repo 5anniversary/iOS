@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E0A17CD248C1128002B53C0 /* Detail_Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A17CC248C1128002B53C0 /* Detail_Struct.swift */; };
 		0E0A17CF248C287B002B53C0 /* Struct_detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A17CE248C287B002B53C0 /* Struct_detail.swift */; };
 		3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE7248BF21400C826D7 /* WorkingCell.swift */; };
 		3DB41EEA248C03B100C826D7 /* EndCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE9248C03B100C826D7 /* EndCell.swift */; };
@@ -39,6 +38,9 @@
 		5E5D8E25248C17C700576E34 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E24248C17C700576E34 /* UIColor+Extension.swift */; };
 		5E5D8E27248C1AFC00576E34 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E26248C1AFC00576E34 /* UIViewController.swift */; };
 		5E5D8E29248C1C4300576E34 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E28248C1C4300576E34 /* String+Extension.swift */; };
+		5E5D8E2B248C3BA700576E34 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E2A248C3BA700576E34 /* DetailService.swift */; };
+		5E5D8E2D248C3F9500576E34 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E2C248C3F9500576E34 /* MainService.swift */; };
+		5E5D8E2F248C404000576E34 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E2E248C404000576E34 /* MainModel.swift */; };
 		D7EE07A06EA2F6EAB543242B /* Pods_Bangmoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215A6299116B001832FF49AD /* Pods_Bangmoon.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,9 @@
 		5E5D8E24248C17C700576E34 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5E5D8E26248C1AFC00576E34 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		5E5D8E28248C1C4300576E34 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5E5D8E2A248C3BA700576E34 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
+		5E5D8E2C248C3F9500576E34 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		5E5D8E2E248C404000576E34 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		821946333EC178FF8B461AFD /* Pods-Bangmoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.debug.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.debug.xcconfig"; sourceTree = "<group>"; };
 		CC650A4003572A0164E29605 /* Pods-Bangmoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.release.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				5E5D8DF3248BC4F700576E34 /* ResponseResult.swift */,
+				5E5D8E2E248C404000576E34 /* MainModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 			children = (
 				5E5D8DF7248BC51300576E34 /* NetworkResult.swift */,
 				5E5D8E0B248BCF8600576E34 /* APIConstants.swift */,
+				5E5D8E2A248C3BA700576E34 /* DetailService.swift */,
+				5E5D8E2C248C3F9500576E34 /* MainService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -409,7 +417,9 @@
 				5E5D8E25248C17C700576E34 /* UIColor+Extension.swift in Sources */,
 				5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */,
 				5E5D8DFA248BC51F00576E34 /* UIImageView+Extension.swift in Sources */,
+				5E5D8E2B248C3BA700576E34 /* DetailService.swift in Sources */,
 				5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */,
+				5E5D8E2D248C3F9500576E34 /* MainService.swift in Sources */,
 				3DB41EEA248C03B100C826D7 /* EndCell.swift in Sources */,
 				5E5D8E10248BD32E00576E34 /* Date+Extension.swift in Sources */,
 				5E5D8E08248BCA5B00576E34 /* MyPageVC.swift in Sources */,
@@ -419,7 +429,8 @@
 				5E5D8E16248BEABE00576E34 /* MainTVC.swift in Sources */,
 				5E5D8E06248BCA4B00576E34 /* DetailVC.swift in Sources */,
 				5E5D8DF4248BC4F700576E34 /* ResponseResult.swift in Sources */,
-				5E5D8DF4248BC4F700576E34 /* Model.swift in Sources */,
+				5E5D8DF4248BC4F700576E34 /* ResponseResult.swift in Sources */,
+				5E5D8E2F248C404000576E34 /* MainModel.swift in Sources */,
 				0E0A17CF248C287B002B53C0 /* Struct_detail.swift in Sources */,
 				5E5D8DF8248BC51300576E34 /* NetworkResult.swift in Sources */,
 				3DB41EEC248C082C00C826D7 /* ProjectList.swift in Sources */,
