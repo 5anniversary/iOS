@@ -8,6 +8,7 @@
 
 import Foundation
 
+<<<<<<< Updated upstream
 // MARK: - Welcome
 struct Detail: Codable {
     let status: Int
@@ -23,6 +24,22 @@ struct DetailData: Codable {
     let pFundingDES, pInformation, pStory: String
     let pGroupImg: String
 
+=======
+    struct Detail: Codable {
+        let status: Int
+        let message: String
+        let data: [Datum]
+}
+
+// MARK: - Datum
+struct Datum: Codable {
+    let pPosterImg: String
+    let pGenre, pName: String
+    let pFundingMoney, pTotalMoney, pDate, pSponsors: Int
+    let pFundingDES, pInformation, pStory: String
+    let pGroupImg: String
+    
+>>>>>>> Stashed changes
     enum CodingKeys: String, CodingKey {
         case pPosterImg = "p_poster_img"
         case pGenre = "p_genre"
@@ -36,4 +53,6 @@ struct DetailData: Codable {
         case pStory = "p_story"
         case pGroupImg = "p_group_img"
     }
+    
 }
+

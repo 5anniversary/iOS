@@ -5,6 +5,12 @@
 //  Created by Junhyeon on 2020/06/06.
 //  Copyright © 2020 Bangmoon. All rights reserved.
 //
+//  DetailVC.swift
+//  Bangmoon
+//
+//  Created by Junhyeon on 2020/06/06.
+//  Copyright © 2020 Bangmoon. All rights reserved.
+//
 
 import UIKit
 
@@ -86,7 +92,23 @@ extension DetailVC {
             // 매개변수에 어떤 값을 가져올 것인지
             case .success(let res):
                 let response = res as! Detail
+<<<<<<< Updated upstream
                 self.pGenrelbl.text = response.data[0].pGenre
+=======
+                self.pPosterImg.setImageBangMoon(response.data[0].pPosterImg)
+                self.pGenrelbl.text = response.data[0].pGenre
+                self.pNamelbl.text = response.data[0].pName
+                self.pTotalMoneylbl.text = response.data[0].pFundingMoney
+                self.pFundingMoneylbl.text = response.data[0].pTotalMoney
+                self.pRemainDatelbl.text = response.data[0].pDate
+                self.pSponsorslbl.text = response.data[0].pSponsors
+                self.pFundingDEStx.text = response.data[0].pFundingDES
+                self.pGepInformationtx.text = response.data[0].pInformation
+                self.pStorytx.text = response.data[0].pStory
+             self.pGroupImg.setImageBangMoon(response.data[0].pGroupImg)
+                
+                
+>>>>>>> Stashed changes
                 
             case .requestErr(let message):
                 self.simpleAlert(title: "공지사항 조회 실패", message: "\(message)")
@@ -104,3 +126,8 @@ extension DetailVC {
         }
     }
 }
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
