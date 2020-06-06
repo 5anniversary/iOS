@@ -19,7 +19,7 @@ struct ProjectList: Codable {
     var p_percentage: Int
 }
 
-struct Welcome: Codable {
+struct Project: Codable {
     let status: Int
     let message: String
     let data: [CompleteList]
