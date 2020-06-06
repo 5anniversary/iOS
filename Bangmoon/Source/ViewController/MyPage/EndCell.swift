@@ -1,5 +1,5 @@
 //
-//  WorkingCell.swift
+//  EndCell.swift
 //  Bangmoon
 //
 //  Created by 김민희 on 07/06/2020.
@@ -8,16 +8,13 @@
 
 import UIKit
 
-class WorkingCell: UITableViewCell {
+class EndCell: UITableViewCell {
 
-    @IBOutlet weak var mainImageView: UIImageView!
+    @IBOutlet weak var videoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var genreLabel: UILabel!
+    @IBOutlet weak var gerneLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var goalLabel: UILabel!
     
     
     override func awakeFromNib() {
