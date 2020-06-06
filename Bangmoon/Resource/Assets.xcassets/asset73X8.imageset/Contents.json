@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+<<<<<<< HEAD
       "scale" : "1x",
       "idiom" : "universal",
       "filename" : "asset73X8.png"
@@ -9,6 +10,16 @@
       "idiom" : "universal",
       "filename" : "asset73X8@2x.png",
       "scale" : "2x"
+=======
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "asset73X8.png"
+    },
+    {
+      "filename" : "asset73X8@2x.png",
+      "scale" : "2x",
+      "idiom" : "universal"
+>>>>>>> main
     },
     {
       "idiom" : "universal",
