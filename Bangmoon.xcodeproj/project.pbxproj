@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< Updated upstream
 		0E0A17CD248C1128002B53C0 /* Detail_Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A17CC248C1128002B53C0 /* Detail_Struct.swift */; };
-=======
 		0E0A17CF248C287B002B53C0 /* Struct_detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A17CE248C287B002B53C0 /* Struct_detail.swift */; };
->>>>>>> Stashed changes
 		3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE7248BF21400C826D7 /* WorkingCell.swift */; };
 		3DB41EEA248C03B100C826D7 /* EndCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE9248C03B100C826D7 /* EndCell.swift */; };
 		3DB41EEC248C082C00C826D7 /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EEB248C082C00C826D7 /* ProjectList.swift */; };
@@ -421,12 +418,9 @@
 				5E5D8E0C248BCF8600576E34 /* APIConstants.swift in Sources */,
 				5E5D8E16248BEABE00576E34 /* MainTVC.swift in Sources */,
 				5E5D8E06248BCA4B00576E34 /* DetailVC.swift in Sources */,
-<<<<<<< Updated upstream
 				5E5D8DF4248BC4F700576E34 /* ResponseResult.swift in Sources */,
-=======
 				5E5D8DF4248BC4F700576E34 /* Model.swift in Sources */,
 				0E0A17CF248C287B002B53C0 /* Struct_detail.swift in Sources */,
->>>>>>> Stashed changes
 				5E5D8DF8248BC51300576E34 /* NetworkResult.swift in Sources */,
 				3DB41EEC248C082C00C826D7 /* ProjectList.swift in Sources */,
 			);
