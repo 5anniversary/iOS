@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE7248BF21400C826D7 /* WorkingCell.swift */; };
 		3DB41EEA248C03B100C826D7 /* EndCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE9248C03B100C826D7 /* EndCell.swift */; };
 		3DB41EEC248C082C00C826D7 /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EEB248C082C00C826D7 /* ProjectList.swift */; };
-=======
 		0E0A17CD248C1128002B53C0 /* Detail_Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A17CC248C1128002B53C0 /* Detail_Struct.swift */; };
->>>>>>> develop
 		5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */; };
 		5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */; };
 		5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD9248BC0CC00576E34 /* MainVC.swift */; };
@@ -407,12 +404,9 @@
 				5E5D8E27248C1AFC00576E34 /* UIViewController.swift in Sources */,
 				5E5D8E29248C1C4300576E34 /* String+Extension.swift in Sources */,
 				5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */,
-<<<<<<< HEAD
 				3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */,
-=======
 				5E5D8E1B248BEB5500576E34 /* MainTVHV.swift in Sources */,
 				5E5D8E25248C17C700576E34 /* UIColor+Extension.swift in Sources */,
->>>>>>> develop
 				5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */,
 				5E5D8DFA248BC51F00576E34 /* UIImageView+Extension.swift in Sources */,
 				5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */,
