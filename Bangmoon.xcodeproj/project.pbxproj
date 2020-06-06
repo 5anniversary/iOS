@@ -13,6 +13,10 @@
 		5E5D8DDD248BC0CC00576E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8DDB248BC0CC00576E34 /* Main.storyboard */; };
 		5E5D8DDF248BC0D100576E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8DDE248BC0D100576E34 /* Assets.xcassets */; };
 		5E5D8DE2248BC0D100576E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D8DE0248BC0D100576E34 /* LaunchScreen.storyboard */; };
+		5E5D8DF4248BC4F700576E34 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF3248BC4F700576E34 /* Model.swift */; };
+		5E5D8DF6248BC50600576E34 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF5248BC50600576E34 /* Enum.swift */; };
+		5E5D8DF8248BC51300576E34 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF7248BC51300576E34 /* Service.swift */; };
+		5E5D8DFA248BC51F00576E34 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DF9248BC51F00576E34 /* Extension.swift */; };
 		D7EE07A06EA2F6EAB543242B /* Pods_Bangmoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215A6299116B001832FF49AD /* Pods_Bangmoon.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,10 @@
 		5E5D8DDE248BC0D100576E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E5D8DE1248BC0D100576E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E5D8DE3248BC0D100576E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E5D8DF3248BC4F700576E34 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5E5D8DF5248BC50600576E34 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		5E5D8DF7248BC51300576E34 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		5E5D8DF9248BC51F00576E34 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		821946333EC178FF8B461AFD /* Pods-Bangmoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.debug.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.debug.xcconfig"; sourceTree = "<group>"; };
 		CC650A4003572A0164E29605 /* Pods-Bangmoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.release.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +138,7 @@
 		5E5D8DED248BC3B500576E34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5E5D8DF3248BC4F700576E34 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 		5E5D8DEE248BC3BA00576E34 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				5E5D8DF5248BC50600576E34 /* Enum.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -144,6 +154,7 @@
 		5E5D8DEF248BC3CB00576E34 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				5E5D8DF7248BC51300576E34 /* Service.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 		5E5D8DF0248BC3D400576E34 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5E5D8DF9248BC51F00576E34 /* Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -280,7 +292,11 @@
 			files = (
 				5E5D8DDA248BC0CC00576E34 /* ViewController.swift in Sources */,
 				5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */,
+				5E5D8DFA248BC51F00576E34 /* Extension.swift in Sources */,
 				5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */,
+				5E5D8DF6248BC50600576E34 /* Enum.swift in Sources */,
+				5E5D8DF4248BC4F700576E34 /* Model.swift in Sources */,
+				5E5D8DF8248BC51300576E34 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
