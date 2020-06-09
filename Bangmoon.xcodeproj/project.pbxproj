@@ -427,11 +427,7 @@
 				5E5D8E25248C17C700576E34 /* UIColor+Extension.swift in Sources */,
 				5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */,
 				5E5D8DFA248BC51F00576E34 /* UIImageView+Extension.swift in Sources */,
-<<<<<<< Updated upstream
 				5E5D8E2B248C3BA700576E34 /* DetailService.swift in Sources */,
-=======
-				0E0A17D1248C41B5002B53C0 /* DetailService.swift in Sources */,
->>>>>>> Stashed changes
 				5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */,
 				5E5D8E2D248C3F9500576E34 /* MainService.swift in Sources */,
 				3DB41EEA248C03B100C826D7 /* EndCell.swift in Sources */,
@@ -446,10 +442,7 @@
 				5E5D8E06248BCA4B00576E34 /* DetailVC.swift in Sources */,
 				5E5D8DF4248BC4F700576E34 /* ResponseResult.swift in Sources */,
 				5E5D8DF4248BC4F700576E34 /* ResponseResult.swift in Sources */,
-<<<<<<< Updated upstream
 				5E5D8E2F248C404000576E34 /* MainModel.swift in Sources */,
-=======
->>>>>>> Stashed changes
 				0E0A17CF248C287B002B53C0 /* Struct_detail.swift in Sources */,
 				5E5D8DF8248BC51300576E34 /* NetworkResult.swift in Sources */,
 			);
