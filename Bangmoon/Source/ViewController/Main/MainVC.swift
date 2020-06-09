@@ -25,7 +25,7 @@ class MainVC: UIViewController {
     
         
     let scrollView = UIScrollView()
-    var images = ["mainviewImgMain", "mainviewImgMain2",  "mainviewImgMain3"]
+    var images : [String]? = ["https://user-images.githubusercontent.com/22820675/83955918-2bfed000-a893-11ea-9b94-89bcfe9472a3.png","https://user-images.githubusercontent.com/22820675/83955919-2d2ffd00-a893-11ea-98a9-e79cd037b043.png","https://user-images.githubusercontent.com/22820675/83955920-2e612a00-a893-11ea-8f8a-4bc6c17c7b2f.png"]
 
     lazy var rightBarButton : UIBarButtonItem = {
         let button = UIBarButtonItem(image: UIImage(named: "13"),
@@ -54,6 +54,10 @@ class MainVC: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         
         get()
+        
+        let image = UIImage(named: "asset73X8")
+        navigationItem.titleView = UIImageView(image: image)
+
     }
 
      
@@ -104,12 +108,14 @@ extension MainVC: UITableViewDataSource {
         cell.titleLabel.text = model?.data[indexPath.row].pName
         cell.categoryLabel.text = model?.data[indexPath.row].pGenre
         cell.dateLabel.text = String(describing: model?.data[indexPath.row].pDate) + "일 남음"
-        let money = String(describing: model?.data[indexPath.row].pTotalMoney)
-        let rate = String(describing: model?.data[indexPath.row].pPercentage)
+        
+        let money = (String(describing: model?.data[indexPath.row].pPercentage) ) as String
+        
+        let rate = (String(describing: model?.data[indexPath.row].pPercentage) ) as String
+        
         cell.ageLabel.text = model?.data[indexPath.row].pRate
         
-        print(rate)
-        cell.timeLabel.text = ((String(describing: model?.data[indexPath.row].pTimes)) as String)
+        cell.timeLabel.text = ((String(model?.data[indexPath.row].pTimes ?? "")) as String)
         cell.rateLabel.text = money + " " + rate + " %"
         var progress: Float = Float(model?.data[indexPath.row].pPercentage ?? 0)
         
@@ -144,10 +150,10 @@ extension MainVC: UITableViewDataSource {
         scrollView.isPagingEnabled = true
         
         
-        for i in 0..<images.count {
+        for i in 0..<(images?.count ?? 0) {
             let imageView = UIImageView()
             let nameLabel = UILabel()
-            imageView.image = UIImage(named: images[i])
+            imageView.setImageBangMoon(images?[i] ?? "")
             
             imageView.contentMode = .scaleToFill //  사진의 비율을 맞춤.
             let xPosition = self.view.frame.width * CGFloat(i) // 현재 보이는 스크린에서 하나의 이미지만 보이게 하기 위해
@@ -158,7 +164,7 @@ extension MainVC: UITableViewDataSource {
             imageView.frame = CGRect(x: xPosition,
                                      y: 0,
                                      width: self.view.frame.width,
-                                     height: self.view.frame.height)
+                                     height: 252)
 
             scrollView.contentSize.width = self.view.frame.width * CGFloat(1+i)
 
@@ -238,6 +244,7 @@ extension MainVC: UITableViewDataSource {
         let vc = sb.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
         
         self.navigationController?.pushViewController(vc, animated: true)
+        mainTV.reloadData()
     }
 }
 
@@ -256,9 +263,8 @@ extension MainVC {
             case .success(let res):
                 let response = res as! MainModel
                 self.model = response
-                
                 self.mainTV.reloadData()
-                
+
             case .requestErr(let message):
                 self.simpleAlert(title: "리스트 조회 실패", message: "\(message)")
                 
@@ -274,4 +280,38 @@ extension MainVC {
             
         }
     }
+    
+    func getImage(){
+        MainService.shared.getMainImageService(){
+            [weak self]
+            data in
+            
+            guard let `self` = self else { return }
+            
+            switch data {
+                
+            // 매개변수에 어떤 값을 가져올 것인지
+            case .success(let res):
+                let response = res as! MainImage
+                dump(response)
+                for i in 0 ..< response.data.count {
+                    self.images?.append(response.data[i].pPosterImg)
+                }
+
+            case .requestErr(let message):
+                self.simpleAlert(title: "리스트 조회 실패", message: "\(message)")
+                
+            case .pathErr:
+                print(".pathErr")
+                
+            case .serverErr:
+                print(".serverErr")
+                
+            case .networkFail:
+                self.simpleAlert(title: "리스트 조회 실패", message: "네트워크 상태를 확인해주세요.")
+            }
+            
+        }
+    }
+
 }

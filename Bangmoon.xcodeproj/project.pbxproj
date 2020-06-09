@@ -11,7 +11,6 @@
 		0E0A17D1248C41B5002B53C0 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A17D0248C41B5002B53C0 /* DetailService.swift */; };
 		3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE7248BF21400C826D7 /* WorkingCell.swift */; };
 		3DB41EEA248C03B100C826D7 /* EndCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EE9248C03B100C826D7 /* EndCell.swift */; };
-		3DB41EEC248C082C00C826D7 /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EEB248C082C00C826D7 /* ProjectList.swift */; };
 		5E5D8DD6248BC0CC00576E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */; };
 		5E5D8DD8248BC0CC00576E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */; };
 		5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8DD9248BC0CC00576E34 /* MainVC.swift */; };
@@ -42,6 +41,9 @@
 		5E5D8E2B248C3BA700576E34 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E2A248C3BA700576E34 /* DetailService.swift */; };
 		5E5D8E2D248C3F9500576E34 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E2C248C3F9500576E34 /* MainService.swift */; };
 		5E5D8E2F248C404000576E34 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E2E248C404000576E34 /* MainModel.swift */; };
+		5E5D8E31248C4F2C00576E34 /* MainImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E30248C4F2C00576E34 /* MainImageModel.swift */; };
+		5E5D8E33248C557700576E34 /* MyPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E32248C557700576E34 /* MyPageService.swift */; };
+		5E5D8E35248C55B000576E34 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D8E34248C55B000576E34 /* ProjectModel.swift */; };
 		D7EE07A06EA2F6EAB543242B /* Pods_Bangmoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215A6299116B001832FF49AD /* Pods_Bangmoon.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +53,6 @@
 		215A6299116B001832FF49AD /* Pods_Bangmoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bangmoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB41EE7248BF21400C826D7 /* WorkingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingCell.swift; sourceTree = "<group>"; };
 		3DB41EE9248C03B100C826D7 /* EndCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndCell.swift; sourceTree = "<group>"; };
-		3DB41EEB248C082C00C826D7 /* ProjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectList.swift; sourceTree = "<group>"; };
 		5E5D8DD2248BC0CC00576E34 /* Bangmoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bangmoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5D8DD5248BC0CC00576E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E5D8DD7248BC0CC00576E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +85,9 @@
 		5E5D8E2A248C3BA700576E34 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
 		5E5D8E2C248C3F9500576E34 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
 		5E5D8E2E248C404000576E34 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		5E5D8E30248C4F2C00576E34 /* MainImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageModel.swift; sourceTree = "<group>"; };
+		5E5D8E32248C557700576E34 /* MyPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageService.swift; sourceTree = "<group>"; };
+		5E5D8E34248C55B000576E34 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		821946333EC178FF8B461AFD /* Pods-Bangmoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.debug.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.debug.xcconfig"; sourceTree = "<group>"; };
 		CC650A4003572A0164E29605 /* Pods-Bangmoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bangmoon.release.xcconfig"; path = "Target Support Files/Pods-Bangmoon/Pods-Bangmoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +205,8 @@
 			children = (
 				5E5D8DF3248BC4F700576E34 /* ResponseResult.swift */,
 				5E5D8E2E248C404000576E34 /* MainModel.swift */,
+				5E5D8E30248C4F2C00576E34 /* MainImageModel.swift */,
+				5E5D8E34248C55B000576E34 /* ProjectModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				5E5D8E0B248BCF8600576E34 /* APIConstants.swift */,
 				5E5D8E2A248C3BA700576E34 /* DetailService.swift */,
 				5E5D8E2C248C3F9500576E34 /* MainService.swift */,
+				5E5D8E32248C557700576E34 /* MyPageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -254,7 +261,6 @@
 				5E5D8E07248BCA5B00576E34 /* MyPageVC.swift */,
 				3DB41EE7248BF21400C826D7 /* WorkingCell.swift */,
 				3DB41EE9248C03B100C826D7 /* EndCell.swift */,
-				3DB41EEB248C082C00C826D7 /* ProjectList.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -415,6 +421,7 @@
 				5E5D8E27248C1AFC00576E34 /* UIViewController.swift in Sources */,
 				5E5D8E29248C1C4300576E34 /* String+Extension.swift in Sources */,
 				5E5D8DDA248BC0CC00576E34 /* MainVC.swift in Sources */,
+				5E5D8E35248C55B000576E34 /* ProjectModel.swift in Sources */,
 				3DB41EE8248BF21400C826D7 /* WorkingCell.swift in Sources */,
 				5E5D8E1B248BEB5500576E34 /* MainTVHV.swift in Sources */,
 				5E5D8E25248C17C700576E34 /* UIColor+Extension.swift in Sources */,
@@ -429,7 +436,9 @@
 				5E5D8E2D248C3F9500576E34 /* MainService.swift in Sources */,
 				3DB41EEA248C03B100C826D7 /* EndCell.swift in Sources */,
 				5E5D8E10248BD32E00576E34 /* Date+Extension.swift in Sources */,
+				5E5D8E33248C557700576E34 /* MyPageService.swift in Sources */,
 				5E5D8E08248BCA5B00576E34 /* MyPageVC.swift in Sources */,
+				5E5D8E31248C4F2C00576E34 /* MainImageModel.swift in Sources */,
 				5E5D8E22248BF19700576E34 /* MainCVC.swift in Sources */,
 				5E5D8DF6248BC50600576E34 /* Font.swift in Sources */,
 				5E5D8E0C248BCF8600576E34 /* APIConstants.swift in Sources */,
@@ -443,7 +452,6 @@
 >>>>>>> Stashed changes
 				0E0A17CF248C287B002B53C0 /* Struct_detail.swift in Sources */,
 				5E5D8DF8248BC51300576E34 /* NetworkResult.swift in Sources */,
-				3DB41EEC248C082C00C826D7 /* ProjectList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
